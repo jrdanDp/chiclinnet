@@ -1,0 +1,64 @@
+{
+  "duos": [
+    {
+      "id": "duo-100",
+      "name": "DUO 100MB",
+      "description": "Internet + CATV",
+      "promoPrice": 39.90,
+      "promoMonths": 3,
+      "regularPrice": 65.00
+    },
+    {
+      "id": "duo-300",
+      "name": "DUO 300MB",
+      "description": "Internet + CATV",
+      "promoPrice": 49.90,
+      "promoMonths": 3,
+      "regularPrice": 75.00
+    },
+    {
+      "id": "duo-500",
+      "name": "DUO 500MB",
+      "description": "Internet + CATV",
+      "promoPrice": 59.90,
+      "promoMonths": 3,
+      "regularPrice": 95.00
+    }
+  ],
+  "catv": [
+    {
+      "id": "catv",
+      "name": "CATV",
+      "description": "Televisión por Cable",
+      "promoPrice": 20.00,
+      "promoMonths": 3,
+      "regularPrice": 25.00
+    }
+  ],
+  "soloInternet": [
+    {
+      "id": "internet-100",
+      "name": "Internet 100MB",
+      "description": "Solo Internet",
+      "promoPrice": null,
+      "promoMonths": null,
+      "regularPrice": 50.00
+    },
+    {
+      "id": "internet-300",
+      "name": "Internet 300MB",
+      "description": "Solo Internet",
+      "promoPrice": null,
+      "promoMonths": null,
+      "regularPrice": 60.00
+    },
+    {
+      "id": "internet-500",
+      "name": "Internet 500MB",
+      "description": "Solo Internet",
+      "promoPrice": null,
+      "promoMonths": null,
+      "regularPrice": 80.00
+    }
+  ]
+}
