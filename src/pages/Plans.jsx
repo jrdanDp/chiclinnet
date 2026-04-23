@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PlanCard from '../components/PlanCard';
+import PlanCard from '../components/dynamic/PlanCard';
 import prices from '../data/prices.json';
 
 function Plans() {

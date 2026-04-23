@@ -1,41 +1,29 @@
 function FeaturesGPON() {
   const features = [
     {
-      icon: '⚡',
-      title: 'Velocidad Real',
-      description: 'Obtén exactamente la velocidad que contratas, sin reducciones'
+      title: 'Pura Fibra',
+      description: 'Obtén exactamente la velocidad que contratas, sin reducciones',
+      gradient: 'from-yellow-400 to-orange-500'
     },
     {
-      icon: '🔄',
       title: 'Simetría Total',
-      description: 'Misma velocidad de subida y bajada para mejores experiencias'
+      description: 'Misma velocidad de subida y bajada para mejores experiencias',
+      gradient: 'from-blue-400 to-blue-600'
     },
     {
-      icon: '🛡️',
-      title: 'Estabilidad sin Cortes',
-      description: 'Infraestructura GPON garantiza conexión continua'
-    },
-    {
-      icon: '🎮',
-      title: 'Optimizado para Gaming',
-      description: 'Latencia mínima para juegos online competitivos'
-    },
-    {
-      icon: '📺',
-      title: 'Streaming Perfecto',
-      description: 'Sin buffering en 4K y contenido HD'
-    },
-    {
-      icon: '🏠',
       title: 'Instalación Rápida',
-      description: 'Listo en menos de 48 horas'
+      description: 'Listo en menos de 48 horas',
+      gradient: 'from-pink-400 to-pink-600'
     }
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <div className="inline-block bg-chiclin-blue-base/10 rounded-full px-4 py-1 mb-4">
+            <span className="text-chiclin-blue-base font-semibold text-sm">TECNOLOGÍA DE VANGUARDIA</span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-chiclin-blue-navy mb-4">
             Tecnología GPON/FTTO
           </h2>
@@ -49,13 +37,17 @@ function FeaturesGPON() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold text-chiclin-blue-navy mb-2">
+              <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-chiclin-blue-navy mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

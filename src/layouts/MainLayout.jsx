@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
+import Navbar from '../components/static/Navbar';
+import Footer from '../components/static/Footer';
+import WhatsAppButton from '../components/static/WhatsAppButton';
 
 function MainLayout() {
   return (

@@ -7,8 +7,8 @@ function Home() {
   return (
     <div>
       <HeroSection />
-      <PromoDuo />
       <FeaturesGPON />
+      <PromoDuo />
       <CallToAction />
     </div>
   );

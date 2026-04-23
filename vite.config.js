@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.kmz'],
-  base: '/chiclinnet/', // Cambiar esto al nombre de tu repositorio
+  base: '/chiclinnet/', 
 })

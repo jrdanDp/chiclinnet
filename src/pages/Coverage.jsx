@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Polygon, Marker, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import CoverageModal from '../components/CoverageModal';
-import CoordinateSearch from '../components/CoordinateSearch';
+import CoverageModal from '../components/dynamic/CoverageModal';
+import CoordinateSearch from '../components/dynamic/CoordinateSearch';
 import { useCoverageData } from '../hooks/useCoverageData';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { checkCoverage as checkCoverageUtil, getCoverageMessage } from '../utils/coverageChecker';
